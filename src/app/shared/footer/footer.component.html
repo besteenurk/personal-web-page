@@ -1,0 +1,75 @@
+<footer class="footer"
+  [ngClass]="{'has-cards': getPath()!=='/user-profile' && getPath()!=='/register' && getPath()!=='/login'}">
+  <div class="container">
+    <div class="row row-grid align-items-center"
+      [ngClass]="{'my-md': getPath()!=='/user-profile' && getPath()!=='/register' && getPath()!=='/login', 'mb-5':getPath()==='/user-profile' || getPath()==='/register' || getPath()==='/login'}">
+      <div class="col-lg-6">
+        <h3 class="text-primary font-weight-light mb-2">Contact Information</h3>
+        <h4 class="mb-0 font-weight-light">You can contact with me anywhere you want</h4>
+      </div>
+      <div class="col-lg-6 text-lg-center btn-wrapper">
+        <a target="_blank" href="mailto:besteenurk@gmail.com"
+          class="btn btn-danger btn-icon-only btn-envelope btn-round btn-lg" ngbTooltip="Email">
+          <i class="fa fa-envelope"></i>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/bestenur-karadeniz"
+          class="btn btn-neutral btn-icon-only btn-linkedin btn-round btn-lg" ngbTooltip="LinkedIn">
+          <i class="fa fa-linkedin"></i>
+        </a>
+        <a target="_blank" href="https://github.com/besteenurk"
+          class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg" ngbTooltip="GitHub">
+          <i class="fa fa-github"></i>
+        </a>
+        <a target="_blank" href="https://gitlab.com/besteenurk"
+          class="btn btn-neutral btn-icon-only btn-gitlab btn-round btn-lg" ngbTooltip="GitLab">
+          <i class="fa fa-gitlab"></i>
+        </a>
+        <a target="_blank" href="https://stackoverflow.com/users/14654440/beste"
+          class="btn btn-neutral btn-icon-only btn-stack-overflow btn-lg btn-round" ngbTooltip="Stack Overflow">
+          <i class="fa fa-stack-overflow"></i>
+        </a>
+        <a target="_blank" href="https://bestte.medium.com"
+          class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg" ngbTooltip="Medium">
+          <i class="fa fa-medium"></i>
+        </a>
+        <a target="_blank" href="https://stackblitz.com/@besteenurk"
+          class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg" ngbTooltip="StackBlitz">
+          <i class="fa fa-thumb-tack"></i>
+        </a>
+        <a target="_blank" href="https://dribbble.com/bestenur"
+          class="btn btn-neutral btn-icon-only btn-dribbble btn-round btn-lg" ngbTooltip="Dribbble">
+          <i class="fa fa-dribbble"></i>
+        </a>
+        <a target="_blank" href="https://play.google.com/store/apps/details?id=sb.konusbenimle.speakme"
+          class="btn btn-neutral btn-icon-only btn btn-round btn-lg" ngbTooltip="Google Play">
+          <i class="fa fa-play"></i>
+        </a>
+        <a target="_blank" href="live:besteenurk" class="btn btn-neutral btn-icon-only btn-skype btn-round btn-lg"
+          ngbTooltip="Skype live:besteenurk">
+          <i class="fa fa-skype"></i>
+        </a>
+      </div>
+    </div>
+    <hr>
+    <div class="row align-items-center justify-content-md-between"  style="margin: 1rem;">
+      <div class="col-md-6">
+        <div class="copyright">
+          &copy; {{test | date: 'yyyy'}}
+          <a href="https://www.linkedin.com/in/bestenur-karadeniz" target="_blank">Bestenur KARADENİZ</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <ul class="nav nav-footer justify-content-end">
+          <li class="nav-item">
+            <a href="https://bestte.medium.com" class="nav-link" target="_blank">Bestte</a>
+          </li>
+          <li class="nav-item">
+            <p class="nav-item">
+              <b>besteenurk@gmail.com</b>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

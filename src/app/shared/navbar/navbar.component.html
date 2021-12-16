@@ -1,0 +1,64 @@
+<nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned">
+  <div class="container">
+    <a class="navbar-brand mr-lg-5" [routerLink]="['/home']">
+      Bestenur KARADENİZ
+    </a>
+    <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
+          [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbar_global" [ngbCollapse]="isCollapsed">
+      <div class="navbar-collapse-header">
+        <div class="row">
+          <div class="col-6 collapse-close">
+            <button type="button" class="navbar-toggler" (click)="isCollapsed = !isCollapsed"
+                  [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+        <li class="nav-item dropdown">
+          <a class="nav-link no-caret" data-toggle="dropdown" role="button">
+            <i class="ni ni-collection d-lg-none"></i>
+            <span class="nav-link-inner--text" [routerLink]="['/landing']">Blog</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+        <li class="nav-item">
+          <a class="nav-link nav-link-icon" href="https://www.linkedin.com/in/bestenur-karadeniz" target="_blank" data-toggle="tooltip" title="LinkedIn">
+            <i class="fa fa-linkedin-square"></i>
+            <span class="nav-link-inner--text d-lg-none">LinkedIn</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-icon" href="https://github.com/besteenurk" target="_blank" data-toggle="tooltip" title="GitHub">
+            <i class="fa fa-github"></i>
+            <span class="nav-link-inner--text d-lg-none">GitHub</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-icon" href="https://gitlab.com/besteenurk" target="_blank" data-toggle="tooltip" title="GitLab">
+            <i class="fa fa-gitlab"></i>
+            <span class="nav-link-inner--text d-lg-none">GitLab</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-icon" href="https://bestte.medium.com" target="_blank" data-toggle="tooltip" title="Medium">
+            <i class="fa fa-medium"></i>
+            <span class="nav-link-inner--text d-lg-none">Medium</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-icon" href="https://stackoverflow.com/users/14654440/beste" target="_blank" data-toggle="tooltip" title="Stack Overflow">
+            <i class="fa fa-stack-overflow"></i>
+            <span class="nav-link-inner--text d-lg-none">Stackoverflow</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
